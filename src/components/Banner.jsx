@@ -2,9 +2,6 @@ import React from "react";
 import video from "../assets/banner_video.mp4";
 
 function Banner() {
-<<<<<<< HEAD
-  return <></>;
-=======
   return (
     <section className="bg-hero-pattern min-h-screen">
       <video className="videoTag" autoPlay loop muted>
@@ -20,7 +17,6 @@ function Banner() {
       </div>
     </section>
   );
->>>>>>> 289043deef656b083dd3f64e58228def30139629
 }
 
 export default Banner;
