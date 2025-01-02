@@ -4,6 +4,7 @@ import JobList from "./components/JobList";
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import Banner from "./components/Banner";
+import Header from "./components/Header";
 
 const App = () => {
   const [jobs, setJobs] = useState(
@@ -18,6 +19,7 @@ const App = () => {
 
   return (
     <div className="app">
+      <Header />
       <Banner />
       <AdminPanel addJob={addJob} />
       <JobList jobs={jobs} />
