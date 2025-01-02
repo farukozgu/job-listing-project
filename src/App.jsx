@@ -3,6 +3,7 @@ import AdminPanel from "./components/AdminPanel";
 import JobList from "./components/JobList";
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
+import Banner from "./components/Banner";
 
 const App = () => {
   const [jobs, setJobs] = useState(
@@ -17,7 +18,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>İş İlanı Paylaşım Platformu</h1>
+      <Banner />
       <AdminPanel addJob={addJob} />
       <JobList jobs={jobs} />
     </div>
