@@ -5,7 +5,7 @@ function Banner() {
   return (
     <section className="bg-hero-pattern min-h-screen relative">
       <video
-        className="videoTag absolute top-0 left-0 w-full h-full object-cover w-full"
+        className="videoTag absolute top-0 left-0 w-full h-full object-cover"
         autoPlay
         loop
         muted
