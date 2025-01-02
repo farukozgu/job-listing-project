@@ -12,7 +12,7 @@ function Banner() {
       >
         <source src={video} type="video/mp4" />
       </video>
-      <div className="container m-auto relative z-10">
+      <div className="container m-auto relative">
         <div className="justify-around min-h-screen flex items-center">
           <div className="grid-rows-6">
             <h1 className="text-9xl text-aqua drop-shadow-xl">GET JOB</h1>
