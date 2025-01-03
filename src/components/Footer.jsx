@@ -25,7 +25,7 @@ function Footer() {
             <img
               src={Arrow}
               id="upArrow"
-              className="w-full max-w-8"
+              className="w-full max-w-8 cursor-pointer transition-all hover:-translate-y-1"
               alt="Yukarı Git"
               onClick={handleScrollToTop}
             />

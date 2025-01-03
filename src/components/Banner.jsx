@@ -21,7 +21,7 @@ function Banner() {
             <div className="button flex items-center justify-center absolute bottom-4 left-1/2 transform -translate-x-1/2 ">
               <a
                 href="#jobs"
-                className="bg-blue-500 font-inter font-medium text-white rounded-md text-lg transition-all hover:bg-blue-600 px-5 py-3 w-full"
+                className="bg-blue-500 animate-bounce font-inter font-medium text-white rounded-md text-lg transition-all hover:bg-blue-600 px-5 py-3 w-full"
               >
                 Post a Job
               </a>
