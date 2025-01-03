@@ -8,6 +8,10 @@ const JobList = ({ jobs }) => (
         key={index}
         logo={job.logo}
         company={job.company}
+        title={job.title}
+        type={job.type}
+        location={job.location}
+        email={job.email}
         description={job.description}
       />
     ))}
