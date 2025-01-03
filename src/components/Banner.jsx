@@ -13,13 +13,18 @@ function Banner() {
         <source src={video} type="video/mp4" />
       </video>
       <div className="container m-auto relative">
-        <div className="justify-around min-h-screen flex items-center">
+        <div className=" min-h-screen">
           <div className="grid-rows-1">
-            <h1 className="text-9xl drop-shadow-xl font-inter text-center">
+            {/* <h1 className="text-9xl drop-shadow-xl font-inter text-center">
               Shape Your Career, Realize Your Dreams
-            </h1>
-            <div className="button flex items-center justify-center">
-              <button className="">Jobs</button>
+            </h1> */}
+            <div className="button flex items-center justify-center absolute bottom-4 left-1/2 transform -translate-x-1/2 ">
+              <a
+                href="#jobs"
+                className="bg-blue-500 font-inter font-medium text-white rounded-md text-lg transition-all hover:bg-blue-600 px-5 py-3 w-full"
+              >
+                Post a Job
+              </a>
             </div>
           </div>
         </div>

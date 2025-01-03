@@ -8,6 +8,9 @@ function Header() {
       <section className="header p-2 absolute z-10 w-full">
         <div className="container m-auto">
           <nav className="flex justify-between items-center">
+            <h1 className="font-inter font-extrabold text-3xl text-white pr-5">
+              JobList
+            </h1>
             <ul className="flex items-center gap-3">
               <li>
                 <a
@@ -24,17 +27,6 @@ function Header() {
                 >
                   Info
                 </a>
-              </li>
-            </ul>
-            <h1 className="font-inter font-extrabold text-3xl text-white pr-5">
-              JobList
-            </h1>
-            <ul className="flex items-center gap-5">
-              <li>
-                <img src={settings} alt="settings" className="cursor-pointer" />
-              </li>
-              <li>
-                <img src={user} alt="user" className="cursor-pointer" />
               </li>
             </ul>
           </nav>
