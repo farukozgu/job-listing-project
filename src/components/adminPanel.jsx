@@ -24,7 +24,7 @@ const AdminPanel = ({ addJob }) => {
       className="admin-panel flex items-center justify-center mx-auto min-h-60"
     >
       <input
-        className="border-inherit border-2 min-h-16 m-10"
+        className="border-blue-500 border-inherit border-2 min-h-16 m-10 text-center min-w-52"
         type="text"
         name="logo"
         value={job.logo}
@@ -33,7 +33,7 @@ const AdminPanel = ({ addJob }) => {
         required
       />
       <input
-        className="border-inherit border-2 min-h-16 m-10"
+        className="border-blue-500 border-2 min-h-16 m-10 text-center min-w-52"
         type="text"
         name="company"
         value={job.company}
@@ -42,14 +42,17 @@ const AdminPanel = ({ addJob }) => {
         required
       />
       <textarea
-        className="border-inherit border-2 min-h-16 m-10"
+        className="border-blue-500 border-inherit border-2 min-h-16 m-10 text-center min-w-52"
         name="description"
         value={job.description}
         placeholder="İlan Açıklaması"
         onChange={handleChange}
         required
       />
-      <button type="submit" className="border-inherit border-2 min-h-16 m-10">
+      <button
+        type="submit"
+        className="border-blue-500 border-inherit border-2 min-h-16 m-10 text-center min-w-52"
+      >
         İlan Ekle
       </button>
     </form>
