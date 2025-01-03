@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import sendBtn from "../assets/send.png";
 
 const AdminPanel = ({ addJob }) => {
   const [job, setJob] = useState({
@@ -41,7 +42,7 @@ const AdminPanel = ({ addJob }) => {
         onChange={handleChange}
         required
       />
-      <textarea
+      <input
         className="border-blue-500 border-inherit border-2 min-h-16 m-10 text-center min-w-52"
         name="description"
         value={job.description}
@@ -51,9 +52,9 @@ const AdminPanel = ({ addJob }) => {
       />
       <button
         type="submit"
-        className="border-blue-500 border-inherit border-2 min-h-16 m-10 text-center min-w-52"
+        className="border-blue-500 border-inherit border-2 min-h-16 m-10 text-center min-w-52 flex items-center justify-center gap-2"
       >
-        İlan Ekle
+        İlan Ekle <img src={sendBtn} className="max-w-5 animate-bounce" />
       </button>
     </form>
   );
