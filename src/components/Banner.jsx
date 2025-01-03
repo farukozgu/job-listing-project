@@ -14,7 +14,7 @@ function Banner() {
       </video>
       <div className="container m-auto relative">
         <div className="justify-around min-h-screen flex items-center">
-          <div className="grid-rows-6">
+          <div className="grid-rows-1">
             <h1 className="text-9xl drop-shadow-xl font-inter text-center">
               Shape Your Career, Realize Your Dreams
             </h1>

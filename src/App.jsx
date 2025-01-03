@@ -5,6 +5,7 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import Banner from "./components/Banner";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [jobs, setJobs] = useState(
@@ -23,6 +24,7 @@ const App = () => {
       <Banner />
       <AdminPanel addJob={addJob} />
       <JobList jobs={jobs} />
+      <Footer />
     </div>
   );
 };
