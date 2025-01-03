@@ -33,8 +33,11 @@ const AdminPanel = ({ addJob }) => {
   // flex flex-col items-center justify-center
   return (
     <>
-      <div className="bg-white py-5 px-7 w-full max-w-3xl my-6 m-auto shadow-md rounded-md">
-        <h1 className="font-inter font-bold text-4xl text-center text-blue-600  pt-2 pb-7">
+      <div
+        id="postJob"
+        className="bg-cardBg py-5 px-7 max-w-3xl my-12 mx-4 border-2 border-blue-600  md:m-auto md:my-12 md:w-full shadow-sm rounded-lg"
+      >
+        <h1 className="font-inter font-bold text-4xl text-center text-blue-600  pt-5 pb-10">
           Post a Job
         </h1>
         <form onSubmit={handleSubmit} className="admin-panel mx-auto min-h-60">
@@ -46,7 +49,7 @@ const AdminPanel = ({ addJob }) => {
               Company
             </label>
             <input
-              className="block w-full sm:max-w-sm font-inter rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+              className="block w-full shadow-sm sm:max-w-sm font-inter rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
               type="text"
               name="company"
               value={job.company}
@@ -60,7 +63,7 @@ const AdminPanel = ({ addJob }) => {
               Logo
             </label>
             <input
-              className="block w-full sm:max-w-sm font-inter rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+              className="block w-full shadow-sm sm:max-w-sm font-inter rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
               type="text"
               name="logo"
               value={job.logo}
@@ -78,7 +81,7 @@ const AdminPanel = ({ addJob }) => {
               name="title"
               placeholder="Open position title"
               value={job.title}
-              className="block w-full sm:max-w-sm font-inter rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+              className="block w-full shadow-sm sm:max-w-sm font-inter rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
               onChange={handleChange}
               required
             />
@@ -92,7 +95,7 @@ const AdminPanel = ({ addJob }) => {
             </label>
             <textarea
               rows={3}
-              className="block w-full sm:max-w-sm font-inter rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+              className="block w-full shadow-sm sm:max-w-sm font-inter rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
               name="description"
               value={job.description}
               placeholder="Tasks, requirements, benefits"
@@ -106,7 +109,7 @@ const AdminPanel = ({ addJob }) => {
             </label>
             <select
               name="type"
-              className="col-start-1 row-start-1 font-inter w-full sm:max-w-sm appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+              className="col-start-1 shadow-sm row-start-1 font-inter w-full sm:max-w-sm appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
               value={job.type}
               onChange={handleChange}
               required
@@ -126,7 +129,7 @@ const AdminPanel = ({ addJob }) => {
               Location
             </label>
             <input
-              className="block w-full sm:max-w-sm font-inter rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+              className="block w-full shadow-sm sm:max-w-sm font-inter rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
               type="text"
               name="location"
               value={job.location}
@@ -141,7 +144,7 @@ const AdminPanel = ({ addJob }) => {
             </label>
             <input
               type="email"
-              className="block w-full sm:max-w-sm font-inter rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+              className="block w-full shadow-sm sm:max-w-sm font-inter rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
               value={job.email}
               name="email"
               placeholder="Your email adress"
@@ -153,7 +156,8 @@ const AdminPanel = ({ addJob }) => {
             type="submit"
             className="bg-blue-500 w-full rounded-md py-2 px-4 my-4 text-white font-inter text-center min-w-52 flex items-center justify-center gap-2 transition-all hover:bg-blue-600"
           >
-            İlan Ekle <img src={sendBtn} className="max-w-5 animate-bounce" />
+            Post
+            <img src={sendBtn} className="max-w-5 animate-bounce" />
           </button>
         </form>
       </div>

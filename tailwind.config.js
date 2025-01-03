@@ -11,6 +11,7 @@ export default {
       },
       colors: {
         aqua: "#81D8D0",
+        cardBg: "#f7f7f7",
       },
     },
   },
