@@ -19,8 +19,12 @@ const AdminPanel = ({ addJob }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="admin-panel">
+    <form
+      onSubmit={handleSubmit}
+      className="admin-panel flex items-center justify-center mx-auto min-h-60"
+    >
       <input
+        className="border-inherit border-2 min-h-16 m-10"
         type="text"
         name="logo"
         value={job.logo}
@@ -29,6 +33,7 @@ const AdminPanel = ({ addJob }) => {
         required
       />
       <input
+        className="border-inherit border-2 min-h-16 m-10"
         type="text"
         name="company"
         value={job.company}
@@ -37,13 +42,16 @@ const AdminPanel = ({ addJob }) => {
         required
       />
       <textarea
+        className="border-inherit border-2 min-h-16 m-10"
         name="description"
         value={job.description}
         placeholder="İlan Açıklaması"
         onChange={handleChange}
         required
       />
-      <button type="submit">İlan Ekle</button>
+      <button type="submit" className="border-inherit border-2 min-h-16 m-10">
+        İlan Ekle
+      </button>
     </form>
   );
 };
