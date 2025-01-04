@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import clock from "../assets/clock.png";
+import Clock from "../assets/clock.png";
 
 const JobCard = ({
   logo,
@@ -38,7 +38,7 @@ const JobCard = ({
             {title}
           </p>
           <p className="font-inter font-light text-sm flex items-center gap-2 cursor-pointer bg-blue-600 text-white p-2 rounded-md drop-shadow-sm justify-center mt-2 w-full min-w-56">
-            <img src={clock} className="w-full max-w-5" alt="Clock icon" />
+            <img src={Clock} className="w-full max-w-5" alt="Clock icon" />
             {type}
           </p>
         </div>
