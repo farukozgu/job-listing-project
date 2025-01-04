@@ -2,7 +2,7 @@ import React from "react";
 import JobCard from "./JobCard";
 
 const JobList = ({ jobs }) => (
-  <div className="job-list">
+  <div className="job-list flex justify-center items-center flex-col gap-8">
     {jobs.map((job, index) => (
       <JobCard
         key={index}
