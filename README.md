@@ -26,7 +26,7 @@ The **Job Listing Project** is a modern platform that enables companies to post 
 
 ## 📸 Preview
 
-![Project Preview](![screencapture-localhost-5174-2025-01-06-14_44_43](https://github.com/user-attachments/assets/e75ebbf3-cded-44e2-a3aa-8cfc56252427)
+![alt text](![screencapture-localhost-5174-2025-01-06-14_44_43](https://github.com/user-attachments/assets/389b3932-526e-477d-b19f-d76449328003)
 )
 
 [Live Demo](https://job-listing-project-iota.vercel.app/) 
