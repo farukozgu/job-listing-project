@@ -20,8 +20,8 @@ const JobCard = ({
   };
 
   return (
-    <div className="job-card bg-cardBg w-full max-w-3xl mt-3 mb-7 rounded-lg drop-shadow-md">
-      <div className="justify-between flex flex-col md:flex-row items-center">
+    <div className="job-card w-full max-w-3xl mt-3 mb-7 rounded-3xl shadow-headerShadow">
+      <div className="justify-between flex flex-col md:flex-row items-center py-3 px-5">
         <div className="flex justify-center gap-1 items-center">
           <div>
             <img
@@ -37,7 +37,7 @@ const JobCard = ({
             <p className="font-inter font-medium text-2xl text-slate-950 hover:text-blue-600 transition-all duration-500 hover:-translate-y-0.5 cursor-pointer">
               {title}
             </p>
-            <p className="font-inter font-light text-sm flex items-center gap-2 cursor-pointer bg-blue-600 text-white p-2 rounded-md drop-shadow-sm justify-center mt-2 w-full min-w-56">
+            <p className="font-inter font-light text-sm flex items-center gap-2 cursor-pointer bg-blue-600 text-white p-2 rounded-md drop-shadow-sm justify-center mt-2 w-full min-w-[217px]">
               <img src={Clock} className="w-full max-w-5" alt="Clock icon" />
               {type}
             </p>
@@ -50,7 +50,7 @@ const JobCard = ({
           </div>
         </div>
         <div className="m-4 font-inter">
-          <p className="font-inter font-medium text-white bg-yellow-400 p-2 w-full min-w-32 text-center rounded-md drop-shadow-sm">
+          <p className="font-jakarta font-medium text-sm uppercase text-white bg-yellow-400 px-3 py-2 w-full min-w-32 text-center rounded-md drop-shadow-sm">
             {location}
           </p>
         </div>

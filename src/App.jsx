@@ -23,8 +23,8 @@ const App = () => {
     <div className="app">
       <Header />
       <Banner />
-      <AdminPanel addJob={addJob} />
       <JobList jobs={jobs} />
+      <AdminPanel addJob={addJob} />
       <Footer />
     </div>
   );

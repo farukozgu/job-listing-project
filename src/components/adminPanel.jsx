@@ -35,10 +35,13 @@ const AdminPanel = ({ addJob }) => {
     <>
       <div
         id="postJob"
-        className="bg-cardBg py-5 px-7 max-w-3xl my-12 mx-4 border-2 border-blue-600  md:m-auto md:my-12 md:w-full shadow-sm rounded-lg"
+        className="py-5 px-7 max-w-3xl my-28 mx-4 border-2 border-blue-500 shadow-headerShadow md:m-auto md:my-28 md:w-full rounded-lg"
       >
-        <h1 className="font-inter font-bold text-4xl text-center text-blue-600  pt-5 pb-10">
-          Post a Job
+        <h1 className="font-inter font-bold text-4xl text-center text-black  pt-5 pb-10">
+          Post a{" "}
+          <span className="text-blue-600 underline font-jakarta font-extrabold">
+            Job
+          </span>
         </h1>
         <form onSubmit={handleSubmit} className="admin-panel mx-auto min-h-60">
           <div className="flex flex-col sm:flex-row justify-between p-2">

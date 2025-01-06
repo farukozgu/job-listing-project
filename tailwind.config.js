@@ -5,13 +5,17 @@ export default {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        jakarta: ["Plus Jakarta Sans"],
       },
       backgroundImage: {
-        "hero-pattern": "url('./assets/bg_banner.png')",
+        "hero-pattern": "url('./assets/blob.svg')",
       },
       colors: {
         aqua: "#81D8D0",
         cardBg: "#f7f7f7",
+      },
+      boxShadow: {
+        headerShadow: "0 2px 30px #0c35731a",
       },
     },
   },
